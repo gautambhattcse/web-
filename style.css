@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primarycolor: rgb(34, 40, 49);
+  --secondaycolor: rgb(57, 62, 70);
+  --thirdcolor: rgb(0, 173, 181);
+  --fourthcolor: rgb(238, 238, 238);
+}
+body {
+  background-color: var(--primarycolor);
+  height: 100%;
+  color: var(--fourthcolor);
+}
+.nav {
+  height: 60px;
+  /* background-color:red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  /* position: absolute; */
+  z-index: 100;
+  top: 0;
+}
+.left {
+  margin-top: 18px;
+  margin-left: -95px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.right {
+  margin-top: 18px;
+  margin-right: 0px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.load-bar {
+  height: 4px;
+  position: fixed;
+  top:0;
+  z-index: 10;
+  background-color: aquamarine;
+  transform-origin: left;
+  width: 100%;
+  scale: 0 1;
+  animation: load-bar linear;
+  animation-timeline: scroll();
+}
+@keyframes load-bar {
+  to {
+    scale: 1 1;
+  }
+}
+.contact-buttons {
+  background-color: var(--thirdcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 160px;
+  flex-direction: column;
+  position: fixed;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  z-index: 0;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.contact-img {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+.hero-section {
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  width: 98%;
+  height: 89vh;
+  margin: auto;
+  margin-top: 5px;
+  background-color: var(--secondaycolor);
+}
+.hero-container:nth-child(2) {
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.hero img {
+    margin-top: -20px;
+  width: 40%;
+  height: 80%;
+}
+.down-arrow {
+  background-color: var(--thirdcolor);
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -858%;
+  bottom: -200px;
+  border-radius:50%;
+
+}
+.down-arrow img {
+  width: 30px;
+  height: 45px;
+  display: block;
+  margin-top:-2px ;
+  margin-left: auto;
+  margin-right: auto;
+}
