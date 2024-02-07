@@ -18,6 +18,7 @@ body {
   background-color: var(--primarycolor);
   height: 100%;
   color: var(--fourthcolor);
+  overflow: hidden;
 }
 .nav {
   height: 60px;
