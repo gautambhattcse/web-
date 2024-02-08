@@ -37,6 +37,30 @@ body {
   font-size: 30px;
   font-weight: bolder;
 }
+svg {
+	width: 100%;
+     height: 44px;
+}
+svg text {
+	animation: strokes 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #EEEEEE;
+}
+.wrapper{
+    width: 150%;
+}
+@keyframes strokes {
+	0%   {
+		fill: rgba(238,238,238,0); stroke: rgba(238,238,238,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(238,238,238,0); stroke: rgba(238,238,238,1); }
+	80%  {fill: rgba(238,238,238,0); stroke: rgba(238,238,238,1); stroke-width: 3; }
+	100% {
+		fill: rgba(238,238,238,1); stroke: rgba(238,238,238,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
 .right {
   margin-top: 18px;
   margin-right: 0px;
